@@ -13,22 +13,14 @@ namespace WordGuess
 
             while (guess != secretWord)
             {
-                if (guess != secretWord)
-                {
-                    Console.WriteLine("Wrong word.");
-                    Console.Write("Please try again: ");
-                    guess = Console.ReadLine();
-                }
-                else
-                {
-                    break;
-                }
+               Console.WriteLine("Wrong word.");
+               Console.Write("Please try again: ");
+               guess = Console.ReadLine();
+              
             }  
+          
+            Console.WriteLine("You won!");
             
-            if (guess == secretWord)
-            {
-                Console.WriteLine("You won!");
-            }
         }
     }
 }
